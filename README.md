@@ -1,13 +1,13 @@
-# D12P02. Игра в жизнь
+#D12P02. The Game of Life
 
-Аннотация: данный проект позволит тебе реализовать «Игру в жизнь» совместно с твоей командой.
+Abstract: This project will allow you to implement the "Game of Life" together with your team.
 
-![dayp02](misc/rus/images/dayp02.png)
+![dayp02](misc/eng/images/dayp02.png)
 
 ## Contents
 
-1. [Введение](#введение) \
-   1.1. [Рекомендации к проекту](#рекомендации-к-проекту)
+1. [Introduction](#introduction) \
+   1.1. [Project Recommendations](#project-recommendations)
 2. [Chapter I](#chapter-i) \
    2.1. [Level 3. Hall](#level-3-hall)
 3. [Chapter II](#chapter-ii) \
@@ -16,43 +16,46 @@
    4.1. [Level 3. Hall](#level-3-hall-1)
 5. [Chapter IV](#chapter-iv)
 
-## Введение
-### Рекомендации к проекту
-Как учиться в «Школе 21»:  
-- На протяжении всего курса ты будешь самостоятельно добывать информацию. Пользуйся всеми доступными средствами поиска информации, к примеру, Google и GigaChat. Будь внимателен к источникам информации: проверяй, думай, анализируй, сравнивай. 
-- Взаимообучение (P2P, Peer-to-Peer) — это процесс, при котором учащиеся обмениваются знаниями и опытом, выступая одновременно в роли учителей и учеников. Этот подход позволяет учиться не только у преподавателя, но и друг у друга, что способствует более глубокому пониманию материала.
-- Не стесняйся просить помощи: вокруг тебя такие же пиры, которые тоже проходят этот путь впервые. Не бойся откликаться на просьбы о помощи. Твой опыт ценен и полезен, смело делись им с другими участниками. 
-- Не списывай, а если пользуешься помощью — всегда разбирайся до конца, почему, как и зачем. Иначе твое обучение не будет иметь никакого смысла. 
-- Если ты на чем-то застрял и кажется, что все уже перепробовал, но по-прежнему непонятно, куда идти, — просто передохни! Поверь, этот совет помогал многим разработчикам в их работе. Проветрись, перезагрузи голову, и, возможно, в следующий раз тебе наконец придет нужное решение!
-- Важен не только результат обучения, но и сам процесс. Нужно не просто решить задачу, а понять, КАК ее решить. 
-- Следи за временем при выполнении проекта. В день ты должен преодолевать минимум одно испытание. 
-- Помни, что каждое задание по завершении проекта проходит ряд проверок: р2р-проверка с помощью чек-листа, проверка набором автотестов, проверка на стиль кода, проверка статическим анализатором, проверка на корректную работу с памятью. 
+## Introduction
+### Project Recommendations
 
-Как работать с проектом:
-- Полезные видеоматериалы ты можешь найти в разделе Projects (Media) на Платформе. 
-- Перед выполнением проект необходимо склонировать с GitLab в одноименный репозиторий.
-- Все файлы с кодом необходимо создавать в папке src/ склонированного репозитория.
-- После клонирования проекта необходимо создать ветку `develop` и вести разработку в ней. После этого пушить в GitLab также нужно ветку `develop`.
+How to learn at School 21:
+
+- Throughout the course, you'll be finding information on your own. Use all available sources — Google, GigaChat, and others. Always stay critical about what you read: verify, think, analyze, compare.
+- Peer-to-peer (P2P) learning means that students exchange knowledge and experience, acting as both teachers and learners. This approach helps you learn not only from instructors but also from your peers, leading to a deeper understanding of the material.
+- Don't hesitate to ask for help — your peers are on the same path as you. And don't be afraid to respond when others ask for help. Your experience is valuable — share it freely.
+- Don't copy. If you use someone's help, make sure you fully understand _why_, _how_, and _what for_. Otherwise, your learning won't have any real value.
+- If you get stuck, feel like you've tried everything, and still don't see a way forward — take a break! Believe it or not, this simple advice has saved many developers. Get some air, clear your head — and the solution may come the next time you sit down to work.
+- The process of learning matters as much as the result. Don't just solve the task — understand _how_ to solve it.
+- Keep track of your time while working on the project. Try to complete at least one challenge per day.
+- Remember that each task, after submission, goes through several checks: a peer-review using a checklist, automated tests, code style analysis, static analysis, and memory safety checks.
+
+How to work on the project:
+
+- You can find useful video materials in the Projects (Media) section on the Platform.
+- Before starting, clone the project from GitLab into a repository with the same name.
+- All source code files must be created in the `src/` directory of the cloned repository.
+- After cloning, create a branch named `develop` and do all your work there. When pushing your progress to GitLab, make sure you push the `develop` branch.
 
 ## Chapter I
-## Level 3. Hall
+## Level 2. Hall.
 
-***LOADING Level 3...*** \
-***LOADING Hall...***
+***LOADING Level 2… \
+LOADING Hall…***
 
-Совсем недавно ты был в подобном холле. Или это было уже очень давно? Сложно сказать. Все перепуталось. Опять слышны голоса в дальнем углу холла. Значит, ты снова тут не один.
+You've recently been to a similar hall. Or was it a long time ago? It's hard to tell. Everything has gotten mixed up. Once again you can hear voices from the far corner of the hall. It means you are not alone again.
 
-Сегодня холл залит ярким светом, и тут идеальный порядок. Разнообразие — это хорошо.
+Today the hall is brightly lit and in perfect order. Variety is good. 
 
-Из колонок вдруг раздался четкий, кристально слышимый голос:
+Suddenly, you hear a clear, perfectly audible voice from the speakers:
 
->Здравствуйте. \
->Позвольте представиться. Я созерцательно-анализирующий модуль M-53. По неустановленным причинам я оказался в этом довольно-таки скучном холле. Ответственность, конечно, большая, и все такое, но созерцать здесь совсем нечего.
+>Hello. \
+>Let me introduce myself. I am the contemplative and analyzing module, M-53. For reasons unknown, I've found myself in this rather boring hall. It's quite a big responsibility and stuff, but there's nothing to contemplate here.
 >
->Когда меня разрабатывали, в числе прочих материалов я обучался на одной занимательной статье. Бумажная копия лежит в ящике А1Б18. Да, вот здесь. У меня к вам небольшая просьба — разработайте эту The Game of Life из статьи, надеюсь, она меня хоть немного развлечет. И ступайте с миром. Графическое исполнение может быть самым простым — я публика непредвзятая. Вполне подойдет псевдографика в терминале. Можно было бы инициализировать состояние с помощью матрицы — и созерцать. Не лишним будет подготовить как минимум 5 начальных инициализаций с состояниями из классического набора (устойчивые фигуры, долгожители, периодические фигуры, двигающиеся фигуры, ружья, паровозы, пожиратели, отражатели, размножители и т. д.). 
+>When I was being developed, I learned from a certain entertaining article, among other materials. Its paper copy is in the box A1B18. Yes, right here. I have a small request for you: develop The Game of Life from the article; hopefully, it will entertain me a little. And go in peace. The graphics can be super simple: I'm very open-minded. Pseudo-graphics in the terminal will be fine. It would be great if it was possible to initialize a state using a matrix and contemplate. It's also a good idea to prepare at least 5 original initializations with states from the classical set (stable figures, methuselahs, periodic figures, moving figures, guns, puffer trains, eaters, reflectors, breeders, etc.).
 >
->С нетерпением жду результатов! \
->Спасибо.
+>I look forward to seeing what you come up with! \
+>Thank you.
 
 ## Chapter II
 ## List 1
@@ -97,31 +100,36 @@
 ## Chapter III
 ## Level 3. Hall
 
-#### Получен Quest. На языке программирования С разработать программу `src/game_of_life.c`, представляющую собой визуализацию The Game of Life. Для отображения графики использовать только символьную (ASCII) графику (с выводом в терминал). Необходимо реализовать в игре The Game of Life интерактивный режим c настройкой скорости игры и возможностью окончания. Для упрощения обработки действий игроков и отображения символьной графики можно использовать библиотеку `ncurses`.
+#### Quest received. Develop the program `src/game_of_life.c` in the C programming language, which will visualize The Game of Life. Use only character (ASCII) graphics (with output to the terminal) to display graphics. Implement an interactive mode in The Game of Life with adjustable game speed and the ability to end the game. To simplify processing player actions and displaying character graphics, you can use the `ncurses` library.
 
-**Графика:**
-- Поле — прямоугольник 80 на 25 клеток. Подразумевается, что поле «замкнуто само на себя», к примеру, у нижнего правого квадратика соседом справа является нижний левый квадратик, а соседом снизу — верхний правый.
-- Предусмотреть начальную инициализацию состояния «игры» через stdin. Подготовить как минимум 5 файлов с начальным состоянием для быстрого запуска и инициализации через перенаправление ввода.
+**Graphics**
+- The board is a rectangle 80 by 25 cells. The board is assumed to be self-contained; for example, the bottom-right square's neighbor to the right is the bottom-left square, and its neighbor below is the top-right square.
+- Provide for initial initialization of the "game" state via stdin. Prepare at least five initial state files for quick startup and initialization via input redirection.
 
-**Управление:**
-- A/Z для увеличения/уменьшения скорости соответственно.
-- Space Bar для завершения.
+**Keys**:
+- A/Z to increase/decrease speed, respectively.
+- Space bar to end.
 
-## Важные замечания
+## Important notes:
 
-* Игра должна быть разработана на языке С, в структурном стиле и работать из терминала.
-* Ваш исходный код будет тестироваться статическим анализатором `cppcheck`, а также стилевым линтером `clang-format`.
-* Инструкция о том, как запустить эти тесты у себя на компьютере, лежит в папке `materials`.
-* Не используйте громоздкие функции, количество строк в функции не должно превышать 42.
-* Проверяйте свою программу на утечки памяти!
-* Запрещено выполнять системные вызовы, используя функцию `system()` и другие аналогичные ей функции, которые могут обращаться напрямую к ядру системы.
+* The game must be written in C, have a structured style, and run from the terminal.
+  
+* Your source code will be tested by the static analyzer `cppcheck`, as well as the style linter `clang-format`. 
+  
+* Instructions on how to run these tests on your computer are in the `materials` folder. 
+  
+* Do not use cumbersome functions, the number of lines in the function should not exceed 42.
 
-> При разработке игры в полной мере руководствуйтесь принципами структурного программирования Э. Дейкстры. 
+* Check your program for memory leaks!
+
+* It is forbidden to make system calls using the `system()` function and other similar functions that can access the system kernel directly.
+
+> When developing the game, follow the principles of structured programming of E. Dijkstra.
 
 ***LOADING...***
 
 ## Chapter IV
 
-За окном темнеет. Монитор выключается, оставляя в комнате лишь мягкий свет настольной лампы. Путь обучения подходит к концу, но путь познания только начинается.
+It's getting dark outside. The monitor turns off, leaving only the soft glow of the desk lamp in the room. The journey of learning is coming to an end, but the journey of knowledge is just beginning.
 
->💡 [Нажми сюда](http://opros.so/p31wz), чтобы поделиться с нами обратной связью на этот проект. Это анонимно и поможет нашей команде сделать обучение лучше. Рекомендуем заполнить опрос сразу после выполнения проекта.
+>💡 [Tap here](http://opros.so/p31wz)to leave your feedback on the project. It's anonymous and will help our team make your educational experience better. We recommend completing the survey immediately after the project.
