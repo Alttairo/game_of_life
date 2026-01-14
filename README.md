@@ -1,4 +1,4 @@
-#D12P02. The Game of Life
+# D12P02. The Game of Life
 
 Abstract: This project will allow you to implement the "Game of Life" together with your team.
 
